@@ -1,0 +1,434 @@
+*{
+    font-family: sans-serif;
+}
+
+.nav-brand{
+    height: 5vh;
+}
+.navbar .nav-link {
+    color: white;
+}
+.navbar .nav-link:hover {
+    color: yellow;
+    text-shadow:0px 0px 10px yellow,
+                0px 0px 20px yellow,
+                0px 0px 30px yellow;
+}
+.bx{
+    height: 20vh;
+}
+
+.frontpage{
+    background-image:url('https://64.media.tumblr.com/a6ae1b5e6faee146f75c3c9297c948d9/tumblr_plyfg8bqrg1uxrf48o1_640.gif');
+    padding-top: 15rem;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 10%;
+    min-height: 100vh;
+    padding-left: 1%;
+}
+.welcome{
+    font-family: fantasy;
+}
+.visitor{
+    font-family: fantasy;
+    text-shadow:0px 0px 10px yellow,
+                0px 0px 20px yellow,
+                0px 0px 40px yellow; 
+}
+.personal{
+     text-shadow:0px 0px 10px yellow,
+                0px 0px 20px yellow,
+                0px 0px 40px yellow; 
+}
+.btn{
+    height: 6vh;
+}
+.bx{
+    color: white;
+   
+}
+.bx:hover{
+    color: yellow;
+    text-shadow:0px 0px 10px yellow,
+                0px 0px 20px yellow,
+                0px 0px 30px yellow; 
+}
+
+.img1{
+    height: 250px;
+    width: 250px;
+    border: 1px solid white;
+    box-shadow:0px 0px 10px orange,
+                0px 0px 20px yellow,
+                0px 0px 30px yellow; 
+}
+.logo1{
+    height: 7vh;
+}
+.details{
+    text-align: justify;
+}
+.w{
+    font-family: fantasy;
+    border-bottom: 1px solid yellow;
+    border-top: 1px solid orange;
+}
+.typing{
+    font-family: fantasy;
+    text-shadow:0px 0px 10px yellow,
+                0px 0px 20px yellow,
+                0px 0px 30px yellow; 
+}
+.school{
+    height: 150px;
+    width: 150px;
+}
+
+
+/* --- Start progress bar --- */
+
+.process-wrapper {
+	margin:auto;
+	max-width:1080px;
+}
+#progress-bar-container {
+	position:relative;
+	width:90%;
+	margin:auto;
+	height:100px;
+	margin-top:65px;
+}
+#progress-bar-container ul {
+	padding:0;
+	margin:0;
+	padding-top:15px;
+	z-index:9999;
+	position:absolute;
+	width:100%;
+	margin-top:-40px
+}
+#progress-bar-container li:before {
+	content:" ";
+	display:block;
+	margin:auto;
+	width:30px;
+	height:30px;
+	border-radius:50%;
+	border:solid 2px yellow;
+	transition:all ease 0.3s;     
+}
+#progress-bar-container li.active:before, #progress-bar-container li:hover:before {
+	border:solid 2px orange;
+       	 
+	background: linear-gradient(to right, yellow 0%,#fff 100%); 
+}
+#progress-bar-container li {
+	list-style:none;
+	float:left;
+	width:20%;
+	text-align:center;
+	color:#aaa;
+	text-transform:uppercase;
+	font-size:11px;
+	cursor:pointer;
+	font-weight:700;
+	transition:all ease 0.2s;
+	vertical-align:bottom;
+	height:60px;
+	position:relative;
+}
+#progress-bar-container li .step-inner {
+	position:absolute;
+	width:100%;
+	bottom:0;
+    font-size: 14px;
+}
+#progress-bar-container li.active, #progress-bar-container li:hover {
+	color:white;
+}
+#progress-bar-container li:after {
+	content:" ";
+	display:block;
+	width:6px;
+	height:6px;
+	background:#777;
+	margin:auto;
+	border:solid 7px #fff;
+	border-radius:50%;
+	margin-top:40px;
+	box-shadow:0 2px 13px -1px rgba(0,0,0,0.3);
+	transition:all ease 0.2s;
+     
+}
+#progress-bar-container li:hover:after {
+	background:#CC7722;
+}
+#progress-bar-container li.active:after {
+	background:#DAA520;
+}
+#progress-bar-container #line {
+	width:80%;
+	margin:auto;
+	background: #eee;
+	height:6px;
+	position:absolute;
+	left:10%;
+	top:57px;
+	z-index:1;
+	border-radius:50px;
+	transition:all ease 0.9s;
+}
+#progress-bar-container #line-progress {
+	content:" ";
+	width:3%;
+	height:100%;
+	background: #DAA520;	 
+	background: linear-gradient(to right, #CC7722 0%,#DAA520 100%); 
+	position:absolute;
+	z-index:2;
+	border-radius:50px;
+	transition:all ease 0.9s;
+}
+#progress-content-section {
+	width:90%;
+	margin: auto;
+	background: gray;
+	border-radius: 4px;
+}
+#progress-content-section .section-content {
+	padding:30px 40px;
+	text-align:center;
+}
+#progress-content-section .section-content h2 {
+	font-size:17px;
+	text-transform:uppercase;
+	color:yellow;
+	letter-spacing:1px;
+}
+#progress-content-section .section-content p {
+	font-size:16px;
+	line-height:1.8em;
+	color:white;
+}
+#progress-content-section .section-content {
+	display:none;
+	animation: FadeInUp 700ms ease 1;
+	animation-fill-mode:forwards;
+	transform:translateY(15px);
+	opacity:0;
+}
+#progress-content-section .section-content.active {
+	display:block;
+}
+@keyframes FadeInUp {
+	0% {
+		transform:translateY(15px);
+		opacity:0;
+	}
+	
+	100% {
+		transform:translateY(0px);
+		opacity:1;
+	}
+}
+
+.footer-distributed{
+	background: #444;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	font: bold 16px sans-serif;
+	text-align: left;
+	padding: 50px 60px 40px;
+	overflow: hidden;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	float: left;
+}
+
+/* The company logo */
+
+.footer-distributed h3{
+	color:  #ffffff;
+	font: normal 36px 'Roboto', cursive;
+	margin: 0 0 10px;
+}
+
+.footer-distributed h3 span{
+	color:  #5383d3;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 0 0 10px;
+	padding: 0;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  #8f9296;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer social icons */
+
+.footer-distributed .footer-icons{
+	margin-top: 40px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	float: right;
+}
+
+.footer-distributed .footer-right p{
+	display: inline-block;
+	vertical-align: top;
+	margin: 15px 42px 0 0;
+	color: #ffffff;
+}
+
+/* The contact form */
+
+.footer-distributed form{
+	display: inline-block;
+}
+
+.footer-distributed form input,
+.footer-distributed form textarea{
+	display: block;
+	border-radius: 3px;
+	box-sizing: border-box;
+	background-color:  #1f2022;
+	box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+	border: none;
+	resize: none;
+
+	font: inherit;
+	font-size: 14px;
+	font-weight: normal;
+	color:  #d1d2d2;
+
+	width: 400px;
+	padding: 18px;
+}
+
+.footer-distributed ::-webkit-input-placeholder {
+	color:  #5c666b;
+}
+
+.footer-distribut   ed ::-moz-placeholder {
+	color:  #5c666b;
+	opacity: 1;
+}
+
+.footer-distributed :-ms-input-placeholder{
+	color:  #5c666b;
+}
+
+
+.footer-distributed form input{
+	height: 55px;
+	margin-bottom: 15px;
+}
+
+.footer-distributed form textarea{
+	height: 100px;
+	margin-bottom: 20px;
+}
+
+.footer-distributed form button{
+	border-radius: 3px;
+	background-color:  #33383b;
+	color: #ffffff;
+	border: 0;
+	padding: 15px 50px;
+	font-weight: bold;
+	float: right;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 1000px) {
+
+	.footer-distributed {
+		font: bold 14px sans-serif;
+	}
+
+	.footer-distributed .footer-company-name{
+		font-size: 12px;
+	}
+
+	.footer-distributed form input,
+	.footer-distributed form textarea{
+		width: 250px;
+	}
+
+	.footer-distributed form button{
+		padding: 10px 35px;
+	}
+
+}
+
+@media (max-width: 800px) {
+
+	.footer-distributed{
+		padding: 30px;
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-right{
+		float: none;
+		max-width: 300px;
+		margin: 0 auto;
+	}
+
+	.footer-distributed .footer-left{
+		margin-bottom: 40px;
+	}
+
+	.footer-distributed form{
+		margin-top: 30px;
+	}
+
+	.footer-distributed form{
+		display: block;
+	}
+
+	.footer-distributed form button{
+		float: none;
+	}
+}
+
